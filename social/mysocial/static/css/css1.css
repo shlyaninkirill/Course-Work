@@ -1,0 +1,231 @@
+body{
+    background-color: #f2eadc;
+}
+.art{
+    display:flex;
+    flex-flow: column ;
+    background-color: white;
+    /*border-right:1px solid gray;*/
+    width:10%;
+    color: black;
+    background-color: #f2eadc;
+    position: absolute;
+    left:0;
+
+}
+
+.author{
+    color: black;
+    font-size: 15px;
+}
+
+.art a{
+    color: black;
+    margin-left: 15px;
+}
+.content{
+    display:flex;
+    flex-flow: column ;
+    width:50%;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 5px;
+    color: black;
+
+}
+
+.content a{
+    color: black;
+}
+
+#change{
+    margin-left:91.5%;
+    color:black;
+}
+
+.ssilki{
+    margin-top:30px;
+    margin-left: 25px;
+    height:100%;
+}
+.ssilki a{
+    color:black;
+    text-decoration:none;
+
+
+}
+.ssilki li{
+    margin-top:5px;
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.container{
+    width: 100%;
+    height:100%;
+}
+
+.post{
+    padding: 10px;
+    border:1px dashed black;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+}
+.post h1{
+    color:red;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.post-form textarea, input, select{
+    color:black;
+    width:700px;
+    font-size:23px;
+}
+.post-form label {
+    font-size: 27px;
+}
+.post-form select{
+    width:100px;
+    height:30px;
+}
+.post-form textarea{
+    height:300px;
+}
+.post-form{
+    margin:auto;
+    margin-left: 36%;
+}
+
+.article{
+    font-size: 23px;
+    padding: 15px;
+    margin:0;
+}
+.top-menu{
+    margin-top: 5%;
+    font-size: 15px;
+    border:2px solid black;
+    width:250px;
+    border-radius:5px;
+    padding: 15px;
+    text-decoration: none;
+    width:100%;
+
+}
+
+.h2{
+    font-size: 30px;
+}
+.img{
+    height:30%;
+}
+.header{
+	width:100%;
+	padding:15px;
+	color:#f2eadc;
+	background-color: black;
+}
+
+
+
+.header__section{
+	display:flex;
+	align-items:center;
+	background-color: black;
+	justify-content:space-between;
+}
+
+
+
+.header__item{
+	padding:5px;
+	font-size:20px;
+	margin-left:5px;
+
+}
+.header__item a{
+    color:white;
+}
+
+
+.header__item:hover{
+	background-color:black;
+	border-radius:4px
+}
+.headerlogo{
+	font-size:80px;
+	font-weight: bold;
+	color: black;
+}
+
+.header__mainslogan{
+    color: #f2eadc;
+
+    padding-left: 300px;
+    position: absolute;
+    font-size: 40px;
+
+
+
+}
+
+.headButton{
+	cursor:pointer;
+}
+.headerlogo:hover{
+
+}
+.headerlogo img{
+    width:15%;
+    margin-left: 7%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: calc(100vh - 80px);
+}
+
+footer{
+    margin-top: 20px;
+    background-color: black;
+    font-size: 15px;
+    width:100%;
+    padding: 35px;
+}
+.footerp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-left: 15px;
+    color:#f2eadc;
+    justify-content:space-around;
+}
+
+.errorlist{
+    color:red;
+}
+.rll{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.pod{
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.headerButton a{
+    margin-left: 25px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+
+.headerButton a:hover{
+    background-color: white;
+}

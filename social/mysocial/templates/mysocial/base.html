@@ -1,0 +1,70 @@
+
+<html>
+    <head>
+        {% block head %}
+        <title>Base</title>
+        {% endblock %}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/css1.css' %}">
+    </head>
+    <body>
+    <header>
+        <div class="header">
+        <div class="header__section">
+            <div class="header__item headerlogo">
+                <a href="/"><img class="Imag" src="{% static 'Images/rofl2.jpg' %}"></a>
+            </div>
+            <div class = "header__mainslogan">
+                <p>Car Service Centre</p>
+        </div>
+				<div class="headerButton">
+                    {% if user.is_authenticated %}
+                    <a href="/logout">Выйти</a>
+                    {% else %}
+                    <a href="/login">Войти</a>
+                    <a href="/register">Регистрация</a>
+                    {% endif %}
+				</div>
+		</div>
+            </div>
+    </header>
+
+    <div class="container">
+
+    <div class="art">
+        <ul class="ssilki">
+            <li><a href="/Details">Детали</a></li>
+            <li><a href="/Clients">Клиенты</a></li>
+            <li><a href="/Feed">Наши работы</a></li>
+            <li><a href="/Functions">Новые услуги</a></li>
+        </ul>
+    </div>
+
+
+        <div class="content">
+            <!--{% if messages %}-->
+            <!--{% for message in messages %}-->
+                  <!--<div class="alert alert-{{ message.tags }}">-->
+                    <!--{{ message }}-->
+                  <!--</div>-->
+            <!--{% endfor %}-->
+          <!--{% endif %}-->
+            {% if user.is_authenticated %}
+            <a href="{% url 'com_new' %}" class="top-menu">Добавить заявку...</a>
+            {% endif %}
+            {% block content %}
+            {% endblock %}
+        </div>
+    <footer>
+        <div class="footerp">
+            <p>&copy; 2019 CarServiceCompany</p>
+            <p>Почта: kirillshlyanin97@mail.ru</p>
+            <p>Номер: +7(776)667-77-45</p>
+            <p>Instagram: k.s.h.13</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
