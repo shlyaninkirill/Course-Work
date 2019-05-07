@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
 
+
 urlpatterns = [
     path('', views.com_list, name='com_list'),\
     path('Feed/', views.com_list, name='com_list'),

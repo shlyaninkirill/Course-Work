@@ -1,12 +1,12 @@
 {% extends 'mysocial/base.html' %}
 
 {% block head %}
-<title>Новости</title>
+<title>Новые услуги</title>
 {% endblock %}
 
 {% block content %}
                 {% for post in posts %}
-                    <div class="post">
+                    <div class="request">
                         <p class="author"> Автор: {{ post.author}} <p style="color:gray;">{{ post.published_date }}</p></p>
                         <h1><a href="{% url 'com_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                         <p style="color:black">{{ post.text|linebreaksbr }}</p>
